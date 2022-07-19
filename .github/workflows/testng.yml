@@ -4,6 +4,9 @@
 name: TestNg Tests
 
 on:
+  push:
+    branches:
+      - demo_branch
   schedule:
     - cron: "*/5 * * * *"
 
