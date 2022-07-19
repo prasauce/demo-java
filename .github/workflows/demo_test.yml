@@ -23,7 +23,7 @@ jobs:
       env:
         SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
         SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
-      run: 
+      run: |
         mvn test -pl selenium-examples -Dtest=SeleniumLoginTest
         mvn test -pl selenium-testng-examples -Dtest=CrossBrowserPlatformTest
         mvn test -pl appium-examples -Dtest=AndroidNativeAppTest
